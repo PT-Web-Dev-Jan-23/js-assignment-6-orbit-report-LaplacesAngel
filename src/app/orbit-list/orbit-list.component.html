@@ -2,13 +2,14 @@
     <tr class="header-row">
         <th (click)="sort('name')" class="sortable">Name</th>
         <th (click)="sort('type')" class="sortable">Type</th>
-        <th>Operational</th>
+        <th (click)="showMySatellite()">Operational</th>
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr class="data-row">
-        <td>GPS 938</td>
-        <td>Positioning</td>
+    <tr class="data-row" *ngFor ="let satellite of satellites" >
+        <td>{{satellite.name}}</td>
+        <td>{{satellite.type}}</td>
+        <td>{{satellite.operational}}</td>
         <td>true</td>
         <td>HIGH</td>
         <td>2001-11-01</td>
