@@ -24,6 +24,7 @@ export class OrbitCountsComponent implements OnInit {
 		 }
 	  }
 	}
+	console.log('satellites.length',this.satellites.length,'count',count)
 	return count;
  }
 

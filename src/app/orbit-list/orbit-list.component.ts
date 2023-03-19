@@ -15,9 +15,9 @@ export class OrbitListComponent implements OnInit {
   ngOnInit() {
   }
 
-
   	showMySatellite () {
 		console.log(this.satellites)
+		console.log(this.satellites.length)
 	}
 		
 
